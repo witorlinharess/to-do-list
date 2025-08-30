@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Lista de Tarefas</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lista de Tarefas</title>
+    <!-- Inclui o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclui o CSS customizado -->
     <link rel="stylesheet" href="/style/style.css">
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-
+<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
     <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg">
         <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-6">Minha Lista de Tarefas</h1>
         
         <div class="mb-4 flex space-x-2">
-            <input type="text" id="taskInput" placeholder="Adicionar nova tarefa..."
+            <input type="text" id="task-input" placeholder="Adicionar nova tarefa..."
                    class="flex-grow px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-            <button id="addTaskBtn"
+            <button id="add-task-btn"
                     class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition">
                 Adicionar
             </button>
         </div>
         
-        <ul id="taskList" class="space-y-3">
+        <ul id="task-list" class="space-y-3">
             <!-- As tarefas serão adicionadas aqui pelo JavaScript -->
         </ul>
     </div>
-
-    <script src="script.js"></script>
+    
+    <!-- Inclui o JavaScript no final do corpo para garantir que todos os elementos HTML foram carregados -->
+    <script src="/script/script.js"></script>
 </body>
 </html>
